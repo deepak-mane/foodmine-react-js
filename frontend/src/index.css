@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ 
+
+/*
+  Custom CSS Reset
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    font-size: 18px; /* Divide by 10 to any pixel to make 1rem*/
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif !important;
+    /* font-family: 'Playfair Display', serif !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Helvetica', sans-serif !important; */
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* font-family specific to element styles */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+}
+
+table,
+thead,
+th,
+tbody,
+tr,
+td {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    word-wrap: break-word !important;
+    text-align: start !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+    /* border-bottom: 1px solid var(--color-tertiary); */
+}
+th {
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+
+#root,
+#__next {
+    isolation: auto;
+    /* --color-gray: #ccc; */
+    /* --color-darkgray: #111151; */
+    /* --color-primary: #0B2447; */
+    --color-red: #f54e4e;
+    --color-blue: #7272ea;
+    /*
+    https://www.picmonkey.com/blog/color-theory-choosing-the-best-colors-for-your-designs
+    square tetradic color scheme : use one of them to be dominant and use the others as accents.
+   
+    --color-mainsec: #eeeee0;
+    --color-outlined: #eeeeeeff;
+    --color-outlined-light: #eeeeee7f;
+    --color-primary: rgb(37, 106, 229) !important;
+    --color-primary-light: rgba(37, 106, 229, 0.7) !important;
+    --color-secondary: rgb(255, 26, 113) !important;
+    --color-secondary-light: rgb(255, 26, 113, 0.7) !important;
+    --color-tertiary: rgb(251, 98, 34) !important;
+    --color-tertiary-light: rgb(251, 98, 34, 0.7) !important;
+    --color-quadruple: rgb(195, 214, 27) !important;
+    --color-quadruple-light: rgb(195, 214, 27, 0.7) !important;
+     */
+}
+/*** uncomment if not using tailwindcss
+h1 {
+    font-size: 24px !important;
+    font-weight: 900 !important;
+}
+h2 {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+}
+h3 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+h4 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+h5 {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+h6 {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+p {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+span {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+*/
+
+/** DEE MOVIE WORLD APP SPECIFIC CSS */
+/*
+BUTTON
+*/
+button {
+    box-shadow: none !important;
+    padding: 5px 25px !important;
+    height: 30px !important;
+    border-radius: 2px;
+}
+textarea {
+    width: 100% !important;
+    border-radius: 2px !important;
+    border: 1px solid #a0a0a0 !important;
+    padding-left: 20px;
+    box-shadow: none !important;
+}
+textarea:focus {
+    outline: 0 !important;
+    border: 1px solid #303030 !important;
+    border-radius: 2px !important;
+    box-shadow: none !important;
+}
+select,
+input {
+    height: 35px !important;
+    width: 100% !important;
+    border-radius: 2px !important;
+    border: 1px solid #a0a0a0 !important;
+    padding-left: 20px;
+    box-shadow: none !important;
+}
+
+select:focus,
+input:focus {
+    outline: 0 !important;
+    border: 1px solid #303030 !important;
+    border-radius: 2px !important;
+    box-shadow: none !important;
+}
+
+ 
+.rc-virtual-list-holder {
+    color: blue !important;
+    background-color: #eeeee0 !important;
+}
+.rc-virtual-list-holder .ant-select-item-option-selected {
+    color: blue !important;
+    background-color: #dbffc4 !important;
+}
+
+.ant-form-item {
+    margin-bottom: 0;
+}
+
+a {
+    color: #303030;
+}
+
+a:hover {
+    color: #303030;
+}
+
+i {
+    color: var(--color-primary);
+    font-size: 20px !important;
+    cursor: pointer;
+}
